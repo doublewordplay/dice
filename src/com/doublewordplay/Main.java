@@ -10,15 +10,16 @@ public class Main {
     public static void main(String[] args) {
         List<Integer> rolls = new ArrayList<>();
 
+        //TODO: redo as tets
         System.out.println("roll 1 die 1 time");
         rolls = roll(20);
-        System.out.println("\nroll 1 die multiple times");
+        System.out.println("\n roll 1 die multiple times");
         rolls = roll(asList(20), 5);
-        System.out.println("\nroll multiple dice 1 time");
+        System.out.println("\n roll multiple dice 1 time");
         rolls = roll(20, 8, 4);
-        System.out.println("\nroll 3 different sided dice 3 different times");
+        System.out.println("\n roll 3 different sided dice 3 different times");
         rolls = roll(asList(20, 10, 6), 3, 2, 1);
-        System.out.println("\nbad number of args case");
+        System.out.println("\n bad number of args case");
         rolls = roll(asList(20, 10, 8), 1, 2);
     }
 
